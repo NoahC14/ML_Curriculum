@@ -1,5 +1,7 @@
 # ML/AI Course
 
+[![CI](https://github.com/NoahC14/ML_Curriculum/actions/workflows/ci.yml/badge.svg)](https://github.com/NoahC14/ML_Curriculum/actions/workflows/ci.yml)
+
 Repository-based machine learning and AI curriculum with:
 - a canonical ML spine;
 - strong mathematical foundations;
