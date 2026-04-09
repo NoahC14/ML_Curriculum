@@ -6,3 +6,4 @@ Repository-wide writing and formatting standards live here.
 - `content-boundary.md`
 - `markdown-style.md`
 - `notebook-style.md`
+- `examples/`
