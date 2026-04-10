@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
+  <rect width="640" height="360" fill="#fbfaf5"/>
+  <line x1="70" y1="300" x2="585" y2="300" stroke="#444" stroke-width="2"/>
+  <line x1="90" y1="330" x2="90" y2="45" stroke="#444" stroke-width="2"/>
+  <path d="M110,250 C170,210 220,170 280,145 C335,122 395,112 470,102"
+        fill="none" stroke="#2d6a4f" stroke-width="4"/>
+  <line x1="160" y1="212" x2="470" y2="102" stroke="#b35c00" stroke-width="4" stroke-dasharray="10 8"/>
+  <circle cx="160" cy="212" r="6" fill="#1f3c88"/>
+  <circle cx="470" cy="102" r="6" fill="#1f3c88"/>
+  <circle cx="315" cy="136" r="6" fill="#b35c00"/>
+  <text x="148" y="204" font-family="Georgia, serif" font-size="22" fill="#1f3c88">(x, f(x))</text>
+  <text x="420" y="93" font-family="Georgia, serif" font-size="22" fill="#1f3c88">(y, f(y))</text>
+  <text x="304" y="126" font-family="Georgia, serif" font-size="22" fill="#b35c00">
+    tf(x) + (1 - t)f(y)
+  </text>
+  <text x="505" y="120" font-family="Georgia, serif" font-size="22" fill="#2d6a4f">f</text>
+  <text x="574" y="323" font-family="Georgia, serif" font-size="22" fill="#2c2c2c">x</text>
+  <text x="75" y="55" font-family="Georgia, serif" font-size="22" fill="#2c2c2c">y</text>
+  <text x="92" y="345" font-family="Georgia, serif" font-size="21" fill="#2c2c2c">
+    For a convex function, the graph lies below every chord joining two points on the graph.
+  </text>
+</svg>
