@@ -142,7 +142,7 @@ Every card follows this structure:
 | **Type** | Content |
 | **Purpose** | Build a mathematically serious, ML-focused linear algebra foundation that serves as the reference for all later modules dealing with vector spaces, matrix decompositions, and geometric intuition. |
 | **Inputs / Context** | Card 0.2 (pedagogical principles); Card 1.2 (style standards); standard references (Strang, Axler); understanding of which linear algebra topics appear most in ML (eigendecomposition, SVD, PCA, matrix calculus connections). |
-| **Deliverables** | `modules/00-math-toolkit/notes/linear-algebra.md` covering vectors, matrices, inner products, norms, orthogonality, eigenvalues, eigenvectors, spectral decomposition, SVD, positive definiteness; `modules/00-math-toolkit/derivations/svd-derivation.md`; `modules/00-math-toolkit/exercises/linear-algebra-exercises.md` with theory and computation problems; `modules/00-math-toolkit/solutions/linear-algebra-solutions.md`. |
+| **Deliverables** | `modules/00-math-toolkit/notes/01-linear-algebra.md` covering vectors, matrices, inner products, norms, orthogonality, eigenvalues, eigenvectors, spectral decomposition, SVD, positive definiteness; `modules/00-math-toolkit/derivations/svd-derivation.md`; `modules/00-math-toolkit/exercises/01-linear-algebra-exercises.md` with theory and computation problems; `modules/00-math-toolkit/solutions/linear-algebra-solutions.md`. |
 | **Acceptance Criteria** | Includes full derivations (not just statements) for eigendecomposition and SVD; uses both geometric and algebraic viewpoints; ML-relevant examples appear throughout (e.g., PCA as spectral decomposition, covariance matrices, data whitening); exercises span proof-style, computational, and ML-application tiers. |
 | **Dependencies** | Card 1.1, Card 1.2. |
 | **Suggested Owner** | Mathematics content author. |
@@ -157,7 +157,7 @@ Every card follows this structure:
 | **Type** | Content |
 | **Purpose** | Cover the calculus machinery needed for optimization and backpropagation: gradients, Jacobians, Hessians, Taylor expansions, and the multivariate chain rule. |
 | **Inputs / Context** | Card 2.1 (linear algebra, since matrix calculus builds on it); Card 1.2 (style standards); standard references (Rudin for rigor, Boyd for optimization applications). |
-| **Deliverables** | `modules/00-math-toolkit/notes/multivariable-calculus.md` covering partial derivatives, gradients, directional derivatives, Jacobians, Hessians, Taylor approximations, chain rule in matrix form, constrained optimization basics (Lagrange multipliers preview); `modules/00-math-toolkit/derivations/chain-rule-matrices.md`; `modules/00-math-toolkit/exercises/calculus-exercises.md`. |
+| **Deliverables** | `modules/00-math-toolkit/notes/02-multivariable-calculus.md` covering partial derivatives, gradients, directional derivatives, Jacobians, Hessians, Taylor approximations, chain rule in matrix form, constrained optimization basics (Lagrange multipliers preview); `modules/00-math-toolkit/derivations/chain-rule-matrices.md`; `modules/00-math-toolkit/exercises/02-calculus-exercises.md`. |
 | **Acceptance Criteria** | Chain rule is derived in enough generality to support backpropagation derivation in Module 06; Hessian treatment supports second-order optimization discussion in Module 01; Lagrange multiplier introduction sets up constrained optimization; exercises include at least two backprop-prerequisite problems. |
 | **Dependencies** | Card 2.1. |
 | **Suggested Owner** | Mathematics content author. |
@@ -172,7 +172,7 @@ Every card follows this structure:
 | **Type** | Content |
 | **Purpose** | Establish the statistical foundation for learning theory, probabilistic models, Bayesian inference, and information-theoretic losses. |
 | **Inputs / Context** | Card 2.1 (linear algebra for covariance, multivariate distributions); Card 1.2 (style standards); standard references (Murphy, Bishop). |
-| **Deliverables** | `modules/00-math-toolkit/notes/probability-statistics.md` covering probability spaces, random variables, PMFs/PDFs, expectation, variance, covariance, joint and conditional distributions, Bayes' theorem, common distributions (Gaussian, Bernoulli, Categorical, Poisson), maximum likelihood estimation, MAP estimation, conjugate priors introduction; `modules/00-math-toolkit/exercises/probability-exercises.md`. |
+| **Deliverables** | `modules/00-math-toolkit/notes/03-probability-statistics.md` covering probability spaces, random variables, PMFs/PDFs, expectation, variance, covariance, joint and conditional distributions, Bayes' theorem, common distributions (Gaussian, Bernoulli, Categorical, Poisson), maximum likelihood estimation, MAP estimation, conjugate priors introduction; `modules/00-math-toolkit/exercises/03-probability-exercises.md`. |
 | **Acceptance Criteria** | MLE derivation for Gaussian and Bernoulli is worked out fully; Bayes' theorem is motivated with ML examples (e.g., spam classification); covariance and correlation are connected to PCA and feature analysis; exercises include both proof-style and applied problems. |
 | **Dependencies** | Card 2.1, Card 2.2. |
 | **Suggested Owner** | Mathematics / statistics content author. |
@@ -187,7 +187,7 @@ Every card follows this structure:
 | **Type** | Content |
 | **Purpose** | Introduce category theory inside the mathematical foundations as a usable structural language for ML, not merely a formal exercise. This is the "primer mode" — a first pass that seeds ideas formalized later in Module 16. |
 | **Inputs / Context** | Card 0.3 (canonical-vs-speculative boundary); Card 2.1 (linear algebra provides concrete categories like Vect); references (Fong & Spivak, Spivak for sciences). |
-| **Deliverables** | `modules/00-math-toolkit/notes/category-theory-primer.md` covering objects, morphisms, identity, composition, commutative diagrams, products, coproducts, universal properties (intuitive), functors, natural transformations, monoidal intuition; `modules/00-math-toolkit/notebooks/CT-01-categories-and-diagrams.ipynb` with at least five ML constructions as compositional diagrams; `modules/00-math-toolkit/exercises/category-theory-exercises.md`. |
+| **Deliverables** | `modules/00-math-toolkit/notes/05-category-theory-primer.md` covering objects, morphisms, identity, composition, commutative diagrams, products, coproducts, universal properties (intuitive), functors, natural transformations, monoidal intuition; `modules/00-math-toolkit/notebooks/CT-01-categories-and-diagrams.ipynb` with at least five ML constructions as compositional diagrams; `modules/00-math-toolkit/exercises/05-category-theory-exercises.md`. |
 | **Acceptance Criteria** | Uses standard mathematical examples (Set, Vect, Grp) before ML examples; shows at least five ML constructions as compositional diagrams (e.g., feature pipeline, training loop, encoder-decoder, data augmentation chain, transfer learning); avoids unnecessary abstraction while remaining mathematically correct; a reader with linear algebra and basic set theory can follow it. |
 | **Dependencies** | Card 2.1, Card 0.3. |
 | **Suggested Owner** | Category theory content author with ML background. |
@@ -202,7 +202,7 @@ Every card follows this structure:
 | **Type** | Research-content |
 | **Purpose** | Build an explicit translation layer from standard ML concepts into category-theoretic language, distinguishing precise structural correspondences from loose analogies. |
 | **Inputs / Context** | Card 2.4a (category theory primer); familiarity with datasets, hypothesis classes, feature maps, loss functions, optimizers, evaluation loops as standard ML constructions. |
-| **Deliverables** | `modules/00-math-toolkit/notes/ml-categorical-mapping.md` containing a structured mapping table and extended discussion; glossary of correspondences and their limitations; concrete examples from regression, classification, and neural network training. |
+| **Deliverables** | `modules/00-math-toolkit/notes/06-ml-categorical-mapping.md` containing a structured mapping table and extended discussion; glossary of correspondences and their limitations; concrete examples from regression, classification, and neural network training. |
 | **Acceptance Criteria** | Every mapping explicitly distinguishes analogy from exact categorical equivalence; includes concrete worked examples from at least three ML paradigms (regression, classification, neural nets); limitations and caveats are stated, not hidden; reviewed against Card 0.3 boundary guidelines. |
 | **Dependencies** | Card 2.4a, Card 0.3. |
 | **Suggested Owner** | Category theory content author. |
@@ -232,7 +232,7 @@ Every card follows this structure:
 | **Type** | Content |
 | **Purpose** | Introduce entropy, KL divergence, cross-entropy, and mutual information — the information-theoretic tools that underpin loss functions, representation learning, and generative modeling. |
 | **Inputs / Context** | Card 2.3 (probability, since information theory is built on distributions); Card 1.2 (style standards); references (MacKay, Cover & Thomas). |
-| **Deliverables** | `modules/00-math-toolkit/notes/information-theory.md` covering Shannon entropy, differential entropy, KL divergence, cross-entropy, mutual information, data processing inequality intuition; `modules/00-math-toolkit/notebooks/IT-01-entropy-and-divergence.ipynb` with visualizations; `modules/00-math-toolkit/exercises/information-theory-exercises.md`. |
+| **Deliverables** | `modules/00-math-toolkit/notes/04-information-theory.md` covering Shannon entropy, differential entropy, KL divergence, cross-entropy, mutual information, data processing inequality intuition; `modules/00-math-toolkit/notebooks/IT-01-entropy-and-divergence.ipynb` with visualizations; `modules/00-math-toolkit/exercises/04-information-theory-exercises.md`. |
 | **Acceptance Criteria** | Cross-entropy is connected explicitly to classification loss; KL divergence is connected to VAE objectives and regularization; mutual information is connected to representation learning; notebooks include visualizations of entropy and divergence for common distributions. |
 | **Dependencies** | Card 2.3. |
 | **Suggested Owner** | Mathematics content author. |

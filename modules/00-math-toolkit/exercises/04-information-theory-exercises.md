@@ -6,7 +6,7 @@ doc_type: "exercise"
 topic: "information-theory"
 status: "draft"
 prerequisites:
-  - "00-math-toolkit/probability"
+  - "00-math-toolkit/probability-statistics"
   - "00-math-toolkit/information-theory"
 updated: "2026-04-09"
 owner: "curriculum-team"
