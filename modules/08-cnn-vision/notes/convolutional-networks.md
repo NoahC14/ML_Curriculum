@@ -68,13 +68,13 @@ Let $x \in \mathbb{R}^n$ be a 1D signal and let $w \in \mathbb{R}^k$ be a filter
 The mathematical discrete convolution is
 
 $$
-(x * w)[t] = \sum_{j=0}^{k-1} x[t-j]\,w[j].
+\bigl(x * w\bigr)_t = \sum_{j=0}^{k-1} x_{t-j}\,w_j.
 $$
 
 Most machine-learning libraries implement cross-correlation instead:
 
 $$
-(x \star w)[t] = \sum_{j=0}^{k-1} x[t+j]\,w[j].
+\bigl(x \star w\bigr)_t = \sum_{j=0}^{k-1} x_{t+j}\,w_j.
 $$
 
 The only difference is whether the filter is reversed.
@@ -121,9 +121,9 @@ For example, with $n=5$ and $k=3$,
 
 $$
 \begin{bmatrix}
-(x \star w)[0] \\
-(x \star w)[1] \\
-(x \star w)[2]
+\bigl(x \star w\bigr)_0 \\
+\bigl(x \star w\bigr)_1 \\
+\bigl(x \star w\bigr)_2
 \end{bmatrix}
 =
 \begin{bmatrix}
