@@ -13,3 +13,11 @@ Build the mathematical and systems foundations for transformers and large langua
 - pretraining objectives
 - scaling laws intuition
 - fine-tuning, instruction tuning, and RLHF overview
+
+## Shared toolkit usage
+
+Transformer labs in this module should reuse `shared/src/training_diagnostics.py` for:
+
+- learning-rate schedule inspection during warmup and decay;
+- gradient-norm monitoring across attention and MLP blocks; and
+- activation-distribution and confusion-matrix checks for downstream classifier heads.
