@@ -13,3 +13,12 @@ Move from first-principles neural networks to practical training systems and sca
 - residual connections
 - optimization pathologies
 - hardware and scaling considerations
+
+## Shared toolkit usage
+
+This module uses `shared/src/training_diagnostics.py` as the standard diagnostics surface for:
+
+- loss curves during optimization;
+- gradient-norm tracking for vanishing and exploding gradient detection;
+- activation histograms for saturation analysis; and
+- confusion matrices and learning-rate traces in notebook labs.
