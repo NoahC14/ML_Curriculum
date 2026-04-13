@@ -124,7 +124,11 @@ KARATE_LABELS = np.array(
 )
 
 
-def build_adjacency(num_nodes: int, edges: list[tuple[int, int]], add_self_loops: bool = False) -> np.ndarray:
+def build_adjacency(
+    num_nodes: int,
+    edges: list[tuple[int, int]],
+    add_self_loops: bool = False,
+) -> np.ndarray:
     adjacency = np.zeros((num_nodes, num_nodes), dtype=np.float64)
     for source, target in edges:
         adjacency[source, target] = 1.0
@@ -138,8 +142,14 @@ def degree_matrix(adjacency: np.ndarray) -> np.ndarray:
     return np.diag(adjacency.sum(axis=1))
 
 
-def normalized_adjacency(adjacency: np.ndarray, add_self_loops: bool = True) -> np.ndarray:
-    propagated = adjacency + np.eye(adjacency.shape[0], dtype=np.float64) if add_self_loops else adjacency.copy()
+def normalized_adjacency(
+    adjacency: np.ndarray,
+    add_self_loops: bool = True,
+) -> np.ndarray:
+    if add_self_loops:
+        propagated = adjacency + np.eye(adjacency.shape[0], dtype=np.float64)
+    else:
+        propagated = adjacency.copy()
     degrees = propagated.sum(axis=1)
     inv_sqrt = np.zeros_like(degrees)
     nonzero = degrees > 0
@@ -148,11 +158,21 @@ def normalized_adjacency(adjacency: np.ndarray, add_self_loops: bool = True) -> 
 
 
 def normalized_laplacian(adjacency: np.ndarray) -> np.ndarray:
-    return np.eye(adjacency.shape[0], dtype=np.float64) - normalized_adjacency(adjacency, add_self_loops=False)
+    return np.eye(adjacency.shape[0], dtype=np.float64) - normalized_adjacency(
+        adjacency,
+        add_self_loops=False,
+    )
 
 
-def row_mean_aggregate(features: np.ndarray, adjacency: np.ndarray, include_self: bool = True) -> np.ndarray:
-    propagated = adjacency + np.eye(adjacency.shape[0], dtype=np.float64) if include_self else adjacency.copy()
+def row_mean_aggregate(
+    features: np.ndarray,
+    adjacency: np.ndarray,
+    include_self: bool = True,
+) -> np.ndarray:
+    if include_self:
+        propagated = adjacency + np.eye(adjacency.shape[0], dtype=np.float64)
+    else:
+        propagated = adjacency.copy()
     degrees = propagated.sum(axis=1, keepdims=True)
     safe_degrees = np.where(degrees == 0.0, 1.0, degrees)
     return propagated @ features / safe_degrees
