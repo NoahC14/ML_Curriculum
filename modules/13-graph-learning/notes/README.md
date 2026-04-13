@@ -1,5 +1,6 @@
-# notes
+# Graph Learning Notes
 
-Placeholder README for `.\modules\13-graph-learning\notes`.
+Core notes for Module 13:
 
-This directory is scaffolded and ready for curriculum content that matches the repository conventions.
+- `graph-learning.md` introduces graph representations, message passing, and canonical graph neural network architectures.
+- `spectral-graph-methods.md` develops the Laplacian, graph Fourier analysis, and the spectral view behind GCNs.

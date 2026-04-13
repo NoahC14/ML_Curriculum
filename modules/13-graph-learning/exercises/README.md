@@ -1,5 +1,3 @@
-# exercises
+# Graph Learning Exercises
 
-Placeholder README for `.\modules\13-graph-learning\exercises`.
-
-This directory is scaffolded and ready for curriculum content that matches the repository conventions.
+This directory contains written exercises for graph representations, spectral methods, message passing, and graph neural networks.
