@@ -4,6 +4,7 @@ Repository-wide writing and formatting standards live here.
 
 ## Current starter files
 - `content-boundary.md`
+- `diagram-notation.md`
 - `markdown-style.md`
 - `notebook-style.md`
 - `examples/`

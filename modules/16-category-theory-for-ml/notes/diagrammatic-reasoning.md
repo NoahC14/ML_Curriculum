@@ -138,6 +138,16 @@ String diagrams are often convenient in monoidal settings because they emphasize
 
 In ML, this is often the cleanest way to sketch residual blocks, multi-head attention, agent systems with parallel tools, and message passing with repeated local operations.
 
+## Shared Figure References
+
+Use [diagram-notation.md](../../../shared/style-guides/diagram-notation.md) for any extension of this diagram set.
+
+- Supervised commuting conditions: [augmentation-label-square.svg](../../../shared/figures/category-theory/rendered/augmentation-label-square.svg)
+- Representation transport: [representation-equivariance.svg](../../../shared/figures/category-theory/rendered/representation-equivariance.svg)
+- Attention and graph structure: [attention-factorization.svg](../../../shared/figures/category-theory/rendered/attention-factorization.svg) and [message-passing-square.svg](../../../shared/figures/category-theory/rendered/message-passing-square.svg)
+- Agent workflows: [agent-pipeline.svg](../../../shared/figures/category-theory/rendered/agent-pipeline.svg)
+- String-diagram views: [monoidal-parallel.svg](../../../shared/figures/category-theory/rendered/monoidal-parallel.svg) and [residual-block-string.svg](../../../shared/figures/category-theory/rendered/residual-block-string.svg)
+
 ## Summary
 
 Diagrammatic reasoning is the most immediately transferable categorical skill in this module because it converts messy architecture descriptions into explicit equalities of composites.

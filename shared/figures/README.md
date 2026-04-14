@@ -7,3 +7,7 @@ Store reusable figures, diagrams, and notation visuals here.
 - architecture schematics
 - optimization visualizations
 - notation-consistency assets
+
+## Current figure sets
+- `optimization/`
+- `category-theory/`
