@@ -1,0 +1,51 @@
+"""Reusable Python utilities shared across curriculum modules."""
+
+from .evaluation import (
+    calibration_curve_data,
+    classification_metrics,
+    confusion_matrix_report,
+    plot_calibration_curve,
+    plot_confusion_matrix,
+    plot_precision_recall_curve,
+    plot_roc_curve,
+    precision_recall_curve_data,
+    regression_metrics,
+    roc_curve_data,
+    train_valid_test_split,
+)
+from .training_diagnostics import (
+    GradientSnapshot,
+    activation_summary,
+    append_gradient_snapshot,
+    gradient_diagnostics,
+    gradient_norms,
+    plot_activation_histograms,
+    plot_confusion_diagnostics,
+    plot_gradient_norms,
+    plot_learning_rates,
+    plot_loss_curves,
+)
+
+__all__ = [
+    "GradientSnapshot",
+    "activation_summary",
+    "append_gradient_snapshot",
+    "calibration_curve_data",
+    "classification_metrics",
+    "confusion_matrix_report",
+    "gradient_diagnostics",
+    "gradient_norms",
+    "plot_calibration_curve",
+    "plot_activation_histograms",
+    "plot_confusion_diagnostics",
+    "plot_gradient_norms",
+    "plot_learning_rates",
+    "plot_loss_curves",
+    "plot_confusion_matrix",
+    "plot_precision_recall_curve",
+    "plot_roc_curve",
+    "precision_recall_curve_data",
+    "regression_metrics",
+    "roc_curve_data",
+    "train_valid_test_split",
+]
