@@ -331,6 +331,16 @@ Before using categorical language for an ML construction, ask:
 
 If these questions cannot be answered concretely, the categorical language should be presented as heuristic only.
 
+## Shared Figure References
+
+The categorical mapping note should reuse the shared guide [diagram-notation.md](../../../shared/style-guides/diagram-notation.md) rather than inventing local figure conventions.
+
+- Core pipeline factorization: [feature-pipeline.svg](../../../shared/figures/category-theory/rendered/feature-pipeline.svg)
+- Empirical-risk composition: [empirical-risk-pipeline.svg](../../../shared/figures/category-theory/rendered/empirical-risk-pipeline.svg)
+- Label preservation and invariance: [augmentation-label-square.svg](../../../shared/figures/category-theory/rendered/augmentation-label-square.svg)
+- Equivariant representation transport: [representation-equivariance.svg](../../../shared/figures/category-theory/rendered/representation-equivariance.svg)
+- Functorial and naturality claims: [functor-composition.svg](../../../shared/figures/category-theory/rendered/functor-composition.svg) and [naturality-square.svg](../../../shared/figures/category-theory/rendered/naturality-square.svg)
+
 ## Summary
 
 The safest and most useful categorical translations in early ML are:

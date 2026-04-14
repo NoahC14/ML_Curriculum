@@ -171,6 +171,15 @@ This cleanly distinguishes:
 | "An adapter family is a natural transformation." | Sometimes | Requires a commuting square for every source morphism. |
 | "Optimization is a functor." | Usually not at this level | Too vague without more setup. |
 
+## Shared Figure References
+
+All new figures for this note should follow [diagram-notation.md](../../../shared/style-guides/diagram-notation.md).
+
+- Category and composition review: [basic-composition.svg](../../../shared/figures/category-theory/rendered/basic-composition.svg) and [commutative-triangle.svg](../../../shared/figures/category-theory/rendered/commutative-triangle.svg)
+- Functorial transport: [functor-composition.svg](../../../shared/figures/category-theory/rendered/functor-composition.svg)
+- Naturality: [naturality-square.svg](../../../shared/figures/category-theory/rendered/naturality-square.svg)
+- Supervised and representation pipelines: [feature-pipeline.svg](../../../shared/figures/category-theory/rendered/feature-pipeline.svg) and [representation-equivariance.svg](../../../shared/figures/category-theory/rendered/representation-equivariance.svg)
+
 ## Summary
 
 The formal lesson is short but powerful:

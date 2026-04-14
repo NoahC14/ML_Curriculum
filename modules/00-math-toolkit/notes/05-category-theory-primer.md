@@ -417,6 +417,16 @@ It does **not** by itself tell us:
 
 Those questions still require the standard mathematics of ML.
 
+## Shared Figure References
+
+Use the shared notation guide for all future categorical figures: [diagram-notation.md](../../../shared/style-guides/diagram-notation.md).
+
+- Composition and commuting examples: [basic-composition.svg](../../../shared/figures/category-theory/rendered/basic-composition.svg), [commutative-triangle.svg](../../../shared/figures/category-theory/rendered/commutative-triangle.svg), and [augmentation-label-square.svg](../../../shared/figures/category-theory/rendered/augmentation-label-square.svg)
+- Universal properties: [product-universal-property.svg](../../../shared/figures/category-theory/rendered/product-universal-property.svg) and [coproduct-universal-property.svg](../../../shared/figures/category-theory/rendered/coproduct-universal-property.svg)
+- Functorial structure: [functor-composition.svg](../../../shared/figures/category-theory/rendered/functor-composition.svg) and [naturality-square.svg](../../../shared/figures/category-theory/rendered/naturality-square.svg)
+- ML pipeline examples: [feature-pipeline.svg](../../../shared/figures/category-theory/rendered/feature-pipeline.svg), [encoder-decoder.svg](../../../shared/figures/category-theory/rendered/encoder-decoder.svg), and [residual-block-string.svg](../../../shared/figures/category-theory/rendered/residual-block-string.svg)
+- Parallel composition intuition: [monoidal-parallel.svg](../../../shared/figures/category-theory/rendered/monoidal-parallel.svg)
+
 ## Summary
 
 This primer introduced:

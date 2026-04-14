@@ -1,0 +1,312 @@
+{
+  "style": {
+    "canvas_width": 8.0,
+    "canvas_height": 4.5,
+    "node_fill": "#F6F3EA",
+    "node_edge": "#1F3A5F",
+    "arrow_color": "#1F3A5F",
+    "accent_color": "#B35C44",
+    "guide_color": "#7A8796",
+    "font_size": 13,
+    "title_size": 15,
+    "line_width": 1.8
+  },
+  "diagrams": [
+    {
+      "slug": "basic-composition",
+      "title": "Basic Composition",
+      "kind": "node",
+      "nodes": [
+        {"id": "X", "label": "$X$", "x": 0.12, "y": 0.52},
+        {"id": "Z", "label": "$Z$", "x": 0.48, "y": 0.52},
+        {"id": "Y", "label": "$Y$", "x": 0.84, "y": 0.52}
+      ],
+      "arrows": [
+        {"from": "X", "to": "Z", "label": "$f$"},
+        {"from": "Z", "to": "Y", "label": "$g$"},
+        {"from": "X", "to": "Y", "label": "$g \\circ f$", "curve": -0.22, "color": "accent"}
+      ],
+      "caption": "Sequential composition is the primitive pattern behind preprocessing, feature extraction, and prediction."
+    },
+    {
+      "slug": "commutative-triangle",
+      "title": "Commutative Triangle",
+      "kind": "node",
+      "nodes": [
+        {"id": "X", "label": "$X$", "x": 0.16, "y": 0.74},
+        {"id": "Y", "label": "$Y$", "x": 0.50, "y": 0.74},
+        {"id": "Z", "label": "$Z$", "x": 0.34, "y": 0.28}
+      ],
+      "arrows": [
+        {"from": "X", "to": "Y", "label": "$f$"},
+        {"from": "Y", "to": "Z", "label": "$g$"},
+        {"from": "X", "to": "Z", "label": "$h$", "color": "accent"}
+      ],
+      "caption": "The triangle commutes when $h = g \\circ f$."
+    },
+    {
+      "slug": "augmentation-label-square",
+      "title": "Label-Preserving Augmentation",
+      "kind": "node",
+      "nodes": [
+        {"id": "X1", "label": "$X$", "x": 0.22, "y": 0.74},
+        {"id": "X2", "label": "$X$", "x": 0.78, "y": 0.74},
+        {"id": "Y1", "label": "$Y$", "x": 0.22, "y": 0.26},
+        {"id": "Y2", "label": "$Y$", "x": 0.78, "y": 0.26}
+      ],
+      "arrows": [
+        {"from": "X1", "to": "X2", "label": "$a$"},
+        {"from": "X1", "to": "Y1", "label": "$y$"},
+        {"from": "X2", "to": "Y2", "label": "$y$"},
+        {"from": "Y1", "to": "Y2", "label": "$\\mathrm{id}_Y$", "color": "accent"}
+      ],
+      "caption": "This square expresses $y \\circ a = y$."
+    },
+    {
+      "slug": "product-universal-property",
+      "title": "Product Universal Property",
+      "kind": "node",
+      "nodes": [
+        {"id": "X", "label": "$X$", "x": 0.18, "y": 0.52},
+        {"id": "P", "label": "$A \\times B$", "x": 0.52, "y": 0.52},
+        {"id": "A", "label": "$A$", "x": 0.84, "y": 0.72},
+        {"id": "B", "label": "$B$", "x": 0.84, "y": 0.30}
+      ],
+      "arrows": [
+        {"from": "X", "to": "P", "label": "$\\langle f,g \\rangle$", "color": "accent"},
+        {"from": "P", "to": "A", "label": "$\\pi_A$"},
+        {"from": "P", "to": "B", "label": "$\\pi_B$"},
+        {"from": "X", "to": "A", "label": "$f$", "curve": 0.18},
+        {"from": "X", "to": "B", "label": "$g$", "curve": -0.18}
+      ],
+      "caption": "Maps into the product are determined uniquely by their components."
+    },
+    {
+      "slug": "coproduct-universal-property",
+      "title": "Coproduct Universal Property",
+      "kind": "node",
+      "nodes": [
+        {"id": "A", "label": "$A$", "x": 0.16, "y": 0.72},
+        {"id": "B", "label": "$B$", "x": 0.16, "y": 0.28},
+        {"id": "C", "label": "$A \\sqcup B$", "x": 0.48, "y": 0.50},
+        {"id": "X", "label": "$X$", "x": 0.84, "y": 0.50}
+      ],
+      "arrows": [
+        {"from": "A", "to": "C", "label": "$\\iota_A$"},
+        {"from": "B", "to": "C", "label": "$\\iota_B$"},
+        {"from": "C", "to": "X", "label": "$[f,g]$", "color": "accent"},
+        {"from": "A", "to": "X", "label": "$f$", "curve": -0.18},
+        {"from": "B", "to": "X", "label": "$g$", "curve": 0.18}
+      ],
+      "caption": "Maps out of the coproduct are determined by branchwise definitions."
+    },
+    {
+      "slug": "functor-composition",
+      "title": "Functor Preserves Composition",
+      "kind": "node",
+      "nodes": [
+        {"id": "A", "label": "$A$", "x": 0.14, "y": 0.72},
+        {"id": "B", "label": "$B$", "x": 0.38, "y": 0.72},
+        {"id": "C", "label": "$C$", "x": 0.62, "y": 0.72},
+        {"id": "FA", "label": "$F(A)$", "x": 0.14, "y": 0.26},
+        {"id": "FB", "label": "$F(B)$", "x": 0.38, "y": 0.26},
+        {"id": "FC", "label": "$F(C)$", "x": 0.62, "y": 0.26}
+      ],
+      "arrows": [
+        {"from": "A", "to": "B", "label": "$f$"},
+        {"from": "B", "to": "C", "label": "$g$"},
+        {"from": "A", "to": "C", "label": "$g \\circ f$", "curve": -0.22, "color": "accent"},
+        {"from": "A", "to": "FA", "label": "$F$"},
+        {"from": "B", "to": "FB", "label": "$F$"},
+        {"from": "C", "to": "FC", "label": "$F$"},
+        {"from": "FA", "to": "FB", "label": "$F(f)$"},
+        {"from": "FB", "to": "FC", "label": "$F(g)$"},
+        {"from": "FA", "to": "FC", "label": "$F(g \\circ f)$", "curve": -0.22, "color": "accent"}
+      ],
+      "caption": "The bottom composite equals $F(g) \\circ F(f)$ whenever $F$ is a functor."
+    },
+    {
+      "slug": "naturality-square",
+      "title": "Naturality Square",
+      "kind": "node",
+      "nodes": [
+        {"id": "FA", "label": "$F(A)$", "x": 0.22, "y": 0.74},
+        {"id": "FB", "label": "$F(B)$", "x": 0.78, "y": 0.74},
+        {"id": "GA", "label": "$G(A)$", "x": 0.22, "y": 0.26},
+        {"id": "GB", "label": "$G(B)$", "x": 0.78, "y": 0.26}
+      ],
+      "arrows": [
+        {"from": "FA", "to": "FB", "label": "$F(f)$"},
+        {"from": "GA", "to": "GB", "label": "$G(f)$"},
+        {"from": "FA", "to": "GA", "label": "$\\eta_A$"},
+        {"from": "FB", "to": "GB", "label": "$\\eta_B$"}
+      ],
+      "caption": "The square commutes when $\\eta_B \\circ F(f) = G(f) \\circ \\eta_A$."
+    },
+    {
+      "slug": "feature-pipeline",
+      "title": "Feature Pipeline Factorization",
+      "kind": "node",
+      "nodes": [
+        {"id": "X", "label": "$X$", "x": 0.10, "y": 0.52},
+        {"id": "Xn", "label": "$X'$", "x": 0.32, "y": 0.52},
+        {"id": "H", "label": "$H$", "x": 0.56, "y": 0.52},
+        {"id": "Y", "label": "$Y$", "x": 0.80, "y": 0.52}
+      ],
+      "arrows": [
+        {"from": "X", "to": "Xn", "label": "$n$"},
+        {"from": "Xn", "to": "H", "label": "$\\phi$"},
+        {"from": "H", "to": "Y", "label": "$c$"},
+        {"from": "X", "to": "Y", "label": "$c \\circ \\phi \\circ n$", "curve": -0.24, "color": "accent"}
+      ],
+      "caption": "A standard supervised model becomes legible as a typed composite."
+    },
+    {
+      "slug": "encoder-decoder",
+      "title": "Encoder-Decoder Factorization",
+      "kind": "node",
+      "nodes": [
+        {"id": "X1", "label": "$X$", "x": 0.16, "y": 0.52},
+        {"id": "Z", "label": "$Z$", "x": 0.50, "y": 0.52},
+        {"id": "X2", "label": "$X$", "x": 0.84, "y": 0.52}
+      ],
+      "arrows": [
+        {"from": "X1", "to": "Z", "label": "$e$"},
+        {"from": "Z", "to": "X2", "label": "$d$"},
+        {"from": "X1", "to": "X2", "label": "$d \\circ e$", "curve": -0.22, "color": "accent"}
+      ],
+      "caption": "The latent object $Z$ exposes a useful factorization of reconstruction."
+    },
+    {
+      "slug": "empirical-risk-pipeline",
+      "title": "Empirical Risk Pipeline",
+      "kind": "node",
+      "nodes": [
+        {"id": "D", "label": "$D$", "x": 0.08, "y": 0.52},
+        {"id": "XY", "label": "$X \\times Y$", "x": 0.30, "y": 0.52},
+        {"id": "YY", "label": "$Y \\times Y$", "x": 0.53, "y": 0.52},
+        {"id": "R1", "label": "$\\mathbb{R}_{\\geq 0}$", "x": 0.76, "y": 0.52},
+        {"id": "R2", "label": "$\\mathbb{R}_{\\geq 0}$", "x": 0.92, "y": 0.52}
+      ],
+      "arrows": [
+        {"from": "D", "to": "XY", "label": "$(x,y)$"},
+        {"from": "XY", "to": "YY", "label": "$h \\times \\mathrm{id}_Y$"},
+        {"from": "YY", "to": "R1", "label": "$\\ell$"},
+        {"from": "R1", "to": "R2", "label": "$\\mathrm{avg}$", "color": "accent"}
+      ],
+      "caption": "Empirical risk is a composite once the dataset index object and averaging map are explicit."
+    },
+    {
+      "slug": "representation-equivariance",
+      "title": "Representation Equivariance",
+      "kind": "node",
+      "nodes": [
+        {"id": "X1", "label": "$X$", "x": 0.22, "y": 0.74},
+        {"id": "X2", "label": "$X$", "x": 0.78, "y": 0.74},
+        {"id": "Z1", "label": "$Z$", "x": 0.22, "y": 0.26},
+        {"id": "Z2", "label": "$Z$", "x": 0.78, "y": 0.26}
+      ],
+      "arrows": [
+        {"from": "X1", "to": "X2", "label": "$a$"},
+        {"from": "Z1", "to": "Z2", "label": "$\\tilde{a}$"},
+        {"from": "X1", "to": "Z1", "label": "$e$"},
+        {"from": "X2", "to": "Z2", "label": "$e$"}
+      ],
+      "caption": "The equality $e \\circ a = \\tilde{a} \\circ e$ expresses equivariant representation transport."
+    },
+    {
+      "slug": "message-passing-square",
+      "title": "Graph Message Passing",
+      "kind": "node",
+      "nodes": [
+        {"id": "HE", "label": "$H_V \\otimes H_E$", "x": 0.24, "y": 0.74},
+        {"id": "ME", "label": "$M_E$", "x": 0.76, "y": 0.74},
+        {"id": "HV", "label": "$H_V$", "x": 0.24, "y": 0.26},
+        {"id": "HVP", "label": "$H_V'$", "x": 0.76, "y": 0.26}
+      ],
+      "arrows": [
+        {"from": "HE", "to": "ME", "label": "$\\mathrm{msg}$"},
+        {"from": "HE", "to": "HV", "label": "$\\mathrm{proj}$"},
+        {"from": "ME", "to": "HVP", "label": "$\\mathrm{agg}$"},
+        {"from": "HV", "to": "HVP", "label": "$\\mathrm{upd}$", "color": "accent"}
+      ],
+      "caption": "Separating message construction, aggregation, and update clarifies graph layer interfaces."
+    },
+    {
+      "slug": "attention-factorization",
+      "title": "Attention Factorization",
+      "kind": "node",
+      "nodes": [
+        {"id": "H", "label": "$H$", "x": 0.08, "y": 0.52},
+        {"id": "QKV", "label": "$Q(H) \\otimes K(H) \\otimes V(H)$", "x": 0.34, "y": 0.52},
+        {"id": "S", "label": "$S$", "x": 0.58, "y": 0.52},
+        {"id": "W", "label": "$W$", "x": 0.78, "y": 0.52},
+        {"id": "HP", "label": "$H'$", "x": 0.92, "y": 0.52}
+      ],
+      "arrows": [
+        {"from": "H", "to": "QKV", "label": "$(Q,K,V)$"},
+        {"from": "QKV", "to": "S", "label": "$\\mathrm{score}$"},
+        {"from": "S", "to": "W", "label": "$\\mathrm{softmax}$"},
+        {"from": "W", "to": "HP", "label": "$\\mathrm{aggregate}$", "color": "accent"}
+      ],
+      "caption": "Attention becomes easier to discuss when score construction and aggregation are separated."
+    },
+    {
+      "slug": "agent-pipeline",
+      "title": "Agent Pipeline with Branching",
+      "kind": "node",
+      "nodes": [
+        {"id": "S", "label": "$S$", "x": 0.10, "y": 0.52},
+        {"id": "P", "label": "$P$", "x": 0.32, "y": 0.52},
+        {"id": "E", "label": "$E$", "x": 0.56, "y": 0.74},
+        {"id": "T", "label": "$T$", "x": 0.56, "y": 0.30},
+        {"id": "SP", "label": "$S'$", "x": 0.86, "y": 0.52}
+      ],
+      "arrows": [
+        {"from": "S", "to": "P", "label": "$p$"},
+        {"from": "P", "to": "E", "label": "$r$"},
+        {"from": "P", "to": "T", "label": "$t$"},
+        {"from": "E", "to": "SP", "label": ""},
+        {"from": "T", "to": "SP", "label": ""},
+        {"from": "P", "to": "SP", "label": "$v$", "curve": -0.18, "color": "accent"}
+      ],
+      "caption": "Branching and recombination make verification conditions explicit in agent workflows."
+    },
+    {
+      "slug": "monoidal-parallel",
+      "title": "Monoidal Parallel Composition",
+      "kind": "string",
+      "wires": [
+        {"y": 0.70, "label_left": "$X$", "label_right": "$X'$"},
+        {"y": 0.30, "label_left": "$Y$", "label_right": "$Y'$"}
+      ],
+      "boxes": [
+        {"x": 0.28, "y": 0.70, "label": "$f$"},
+        {"x": 0.28, "y": 0.30, "label": "$g$"},
+        {"x": 0.64, "y": 0.50, "label": "$h$"}
+      ],
+      "joins": [
+        {"from_wire": 0, "to_box": 2, "anchor": "top"},
+        {"from_wire": 1, "to_box": 2, "anchor": "bottom"}
+      ],
+      "caption": "Horizontal juxtaposition models parallel computation before a downstream merge."
+    },
+    {
+      "slug": "residual-block-string",
+      "title": "Residual Block String Diagram",
+      "kind": "string",
+      "wires": [
+        {"y": 0.50, "label_left": "$H$", "label_right": "$H$"}
+      ],
+      "boxes": [
+        {"x": 0.34, "y": 0.50, "label": "$F$"},
+        {"x": 0.72, "y": 0.50, "label": "$+\\,\\mathrm{id}$"}
+      ],
+      "bypass": {
+        "y": 0.80,
+        "label": "$\\mathrm{id}_H$"
+      },
+      "caption": "The bypass wire keeps the identity path explicit rather than implicit."
+    }
+  ]
+}
