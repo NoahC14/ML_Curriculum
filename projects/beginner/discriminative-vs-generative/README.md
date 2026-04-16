@@ -1,5 +1,11 @@
 # Discriminative vs Generative Models
 
+## Project metadata
+- Level: Semi-open
+- Estimated time: `6-8` hours
+- Primary modules: `02-05`
+- Main topics: logistic regression, SVMs, Naive Bayes, Gaussian mixture models, evaluation
+
 ## Project overview
 This beginner project asks students to compare how discriminative and generative classifiers behave on the same supervised learning task. The core contrast is:
 
