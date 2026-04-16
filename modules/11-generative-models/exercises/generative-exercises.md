@@ -29,6 +29,12 @@ These exercises reinforce the mathematical foundations and tradeoffs of the four
 
 ## Exercise 1. Autoregressive factorization
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `derivation`
+- `tags`: `autoregressive-modeling`, `chain-rule`, `likelihood`
+
 Let $x=(x_1,x_2,x_3)$ be a discrete random vector.
 
 1. Write the chain-rule factorization of $p(x_1,x_2,x_3)$.

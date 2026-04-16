@@ -25,6 +25,12 @@ They mix algebra, geometry, and computational interpretation.
 
 ## Exercise 1: explicit quadratic feature map
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `derivation`
+- `tags`: `feature-map`, `kernel-trick`, `polynomial-kernel`
+
 Let $x=(x_1,x_2)^\top$ and define
 
 $$

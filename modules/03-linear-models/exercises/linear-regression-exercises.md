@@ -27,6 +27,12 @@ These exercises reinforce the linear regression module from algebraic, geometric
 
 ## Exercise 1. Scalar to matrix notation
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `derivation`
+- `tags`: `least-squares`, `matrix-notation`, `dimensions`
+
 Suppose
 
 $$

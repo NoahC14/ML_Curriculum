@@ -28,6 +28,12 @@ They mix symbolic derivation, interpretation, and short design analysis.
 
 ## Exercise 1: first-order versus finite-window dependence
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `analysis`
+- `tags`: `markov-assumption`, `context-window`, `sequence-dependence`
+
 Suppose a language process is modeled by
 
 $$

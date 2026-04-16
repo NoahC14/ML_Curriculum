@@ -29,6 +29,12 @@ They combine derivation, interpretation, and design judgment.
 
 ## Exercise 1: batch normalization moments
 
+**Taxonomy**
+
+- `difficulty`: `intermediate`
+- `type`: `derivation`
+- `tags`: `batch-normalization`, `moments`, `training-dynamics`
+
 Let $x_1,\dots,x_m$ be a batch of scalar activations, and define
 
 $$

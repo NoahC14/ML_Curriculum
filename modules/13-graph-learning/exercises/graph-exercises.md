@@ -24,6 +24,12 @@ These exercises reinforce graph representations, Laplacians, message passing, sp
 
 ## Exercise 1: adjacency, degree, and Laplacian
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `derivation`
+- `tags`: `adjacency-matrix`, `graph-laplacian`, `spectral-graph-theory`
+
 Consider the undirected graph on nodes $\{1,2,3,4\}$ with edges
 
 $$

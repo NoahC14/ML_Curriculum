@@ -26,6 +26,12 @@ They mix symbolic derivation, architectural comparison, and objective-level inte
 
 ## Exercise 1: annotate every dimension
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `analysis`
+- `tags`: `self-attention`, `tensor-shapes`, `dimensional-analysis`
+
 Let
 
 $$

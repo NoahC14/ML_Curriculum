@@ -31,6 +31,12 @@ perceptrons, multilayer perceptrons, activation functions, backpropagation, init
 
 ## Exercise 1: perceptron geometry
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `analysis`
+- `tags`: `perceptron`, `decision-boundary`, `geometry`
+
 Let
 
 $$

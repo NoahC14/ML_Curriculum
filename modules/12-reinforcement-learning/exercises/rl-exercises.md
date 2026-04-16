@@ -27,6 +27,12 @@ These exercises reinforce the mathematical and algorithmic foundations of reinfo
 
 ## Exercise 1. MDP components
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `analysis`
+- `tags`: `mdp`, `state-space`, `reward-design`
+
 A mobile robot navigates a warehouse with noisy wheel motion.
 
 1. Propose a state representation for the task.

@@ -25,6 +25,12 @@ These exercises reinforce the basic concepts of supervised statistical learning:
 
 ## Exercise 1. True risk versus empirical risk
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `analysis`
+- `tags`: `true-risk`, `empirical-risk`, `generalization`
+
 Let $\mathcal{F}$ be a class of real-valued predictors and let $\ell$ be squared loss.
 
 1. Write the definitions of true risk and empirical risk for a predictor $f \in \mathcal{F}$.
