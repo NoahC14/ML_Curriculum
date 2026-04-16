@@ -40,7 +40,7 @@ This memo inherits two non-negotiable upstream decisions.
 
 `Standard claim.` Canonical ML content must stand on its own and must never depend on Unity Theory language for correctness or intelligibility.
 
-`Original governance claim.` Any Unity Theory material must be labeled as `Interpretive note` or `Exploratory note` according to [shared/style-guides/content-boundary.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/e6cf-10-1-define-acce/ML_Curriculum/shared/style-guides/content-boundary.md:1).
+`Original governance claim.` Any Unity Theory material must be labeled as `Interpretive note` or `Exploratory note` according to [content-boundary.md](../../../shared/style-guides/content-boundary.md).
 
 ### Primer interface
 

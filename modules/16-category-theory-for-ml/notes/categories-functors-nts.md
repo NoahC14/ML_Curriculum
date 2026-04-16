@@ -131,9 +131,9 @@ where $\phi$ is a feature map and $h$ is a task head. Categorically, this is the
 
 ### Structural Note: Training Is Usually Extra Structure
 
-If $\Theta$ is parameter space and $S_D : \Theta \to \Theta$ is one optimizer step for dataset $D$, then iterative training is repeated composition of an endomorphism:
+If $\Theta$ is parameter space and $S_{\mathcal{D}} : \Theta \to \Theta$ is one optimizer step for dataset $\mathcal{D}$, then iterative training is repeated composition of an endomorphism:
 $$
-S_D^t = \underbrace{S_D \circ \cdots \circ S_D}_{t\text{ times}}.
+S_{\mathcal{D}}^t = \underbrace{S_{\mathcal{D}} \circ \cdots \circ S_{\mathcal{D}}}_{t\text{ times}}.
 $$
 
 This is a categorical pattern, but convergence and generalization remain analytical questions.

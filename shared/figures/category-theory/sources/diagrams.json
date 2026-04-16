@@ -182,19 +182,19 @@
       "title": "Empirical Risk Pipeline",
       "kind": "node",
       "nodes": [
-        {"id": "D", "label": "$D$", "x": 0.08, "y": 0.52},
+        {"id": "I", "label": "$I$", "x": 0.08, "y": 0.52},
         {"id": "XY", "label": "$X \\times Y$", "x": 0.30, "y": 0.52},
         {"id": "YY", "label": "$Y \\times Y$", "x": 0.53, "y": 0.52},
         {"id": "R1", "label": "$\\mathbb{R}_{\\geq 0}$", "x": 0.76, "y": 0.52},
         {"id": "R2", "label": "$\\mathbb{R}_{\\geq 0}$", "x": 0.92, "y": 0.52}
       ],
       "arrows": [
-        {"from": "D", "to": "XY", "label": "$(x,y)$"},
+        {"from": "I", "to": "XY", "label": "$(x,y)$"},
         {"from": "XY", "to": "YY", "label": "$h \\times \\mathrm{id}_Y$"},
         {"from": "YY", "to": "R1", "label": "$\\ell$"},
         {"from": "R1", "to": "R2", "label": "$\\mathrm{avg}$", "color": "accent"}
       ],
-      "caption": "Empirical risk is a composite once the dataset index object and averaging map are explicit."
+      "caption": "Empirical risk is a composite once the sample index object and averaging map are explicit."
     },
     {
       "slug": "representation-equivariance",

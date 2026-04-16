@@ -83,9 +83,9 @@ Two representations may encode the same task identity while differing by inverti
 
 ### Companion-note cross-references
 
-- Primer interface: [modules/00-math-toolkit/unity/unity-theory-primer-interface.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/00-math-toolkit/unity/unity-theory-primer-interface.md:53)
-- Scope memo: [modules/17-unity-theory-perspectives/notes/scope-memo.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/17-unity-theory-perspectives/notes/scope-memo.md:60)
-- Optimization companion: [modules/01-optimization/unity/optimization-companion.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/01-optimization/unity/optimization-companion.md:135)
+- Primer interface: [unity-theory-primer-interface.md](../../00-math-toolkit/unity/unity-theory-primer-interface.md)
+- Scope memo: [scope-memo.md](./scope-memo.md)
+- Optimization companion: [optimization-companion.md](../../01-optimization/unity/optimization-companion.md)
 
 ## Relation
 
@@ -121,8 +121,8 @@ The term should be used only when the relevant map, dependency, or interaction c
 
 ### Companion-note cross-references
 
-- Primer interface: [modules/00-math-toolkit/unity/unity-theory-primer-interface.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/00-math-toolkit/unity/unity-theory-primer-interface.md:54)
-- Scope memo: [modules/17-unity-theory-perspectives/notes/scope-memo.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/17-unity-theory-perspectives/notes/scope-memo.md:71)
+- Primer interface: [unity-theory-primer-interface.md](../../00-math-toolkit/unity/unity-theory-primer-interface.md)
+- Scope memo: [scope-memo.md](./scope-memo.md)
 
 ## Embodiment
 
@@ -157,9 +157,9 @@ The point is narrower: any learned structure reaches the user through a specific
 
 ### Companion-note cross-references
 
-- Primer interface: [modules/00-math-toolkit/unity/unity-theory-primer-interface.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/00-math-toolkit/unity/unity-theory-primer-interface.md:55)
-- Primer discussion of latent codes: [modules/00-math-toolkit/unity/unity-theory-primer-interface.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/00-math-toolkit/unity/unity-theory-primer-interface.md:203)
-- Scope memo: [modules/17-unity-theory-perspectives/notes/scope-memo.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/17-unity-theory-perspectives/notes/scope-memo.md:62)
+- Primer interface: [unity-theory-primer-interface.md](../../00-math-toolkit/unity/unity-theory-primer-interface.md)
+- Primer discussion of latent codes: [unity-theory-primer-interface.md](../../00-math-toolkit/unity/unity-theory-primer-interface.md)
+- Scope memo: [scope-memo.md](./scope-memo.md)
 
 ## Multiplicity
 
@@ -195,9 +195,9 @@ Multiplicity must always be paired with the question: many realizations of what,
 
 ### Companion-note cross-references
 
-- Primer interface: [modules/00-math-toolkit/unity/unity-theory-primer-interface.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/00-math-toolkit/unity/unity-theory-primer-interface.md:56)
-- Primer discussion of basis choice: [modules/00-math-toolkit/unity/unity-theory-primer-interface.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/00-math-toolkit/unity/unity-theory-primer-interface.md:141)
-- Scope memo: [modules/17-unity-theory-perspectives/notes/scope-memo.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/17-unity-theory-perspectives/notes/scope-memo.md:88)
+- Primer interface: [unity-theory-primer-interface.md](../../00-math-toolkit/unity/unity-theory-primer-interface.md)
+- Primer discussion of basis choice: [unity-theory-primer-interface.md](../../00-math-toolkit/unity/unity-theory-primer-interface.md)
+- Scope memo: [scope-memo.md](./scope-memo.md)
 
 ## Coherence
 
@@ -234,10 +234,10 @@ A model can be coherent relative to one transformation family and still fail bad
 
 ### Companion-note cross-references
 
-- Primer interface: [modules/00-math-toolkit/unity/unity-theory-primer-interface.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/00-math-toolkit/unity/unity-theory-primer-interface.md:57)
-- Primer discussion of invariance: [modules/00-math-toolkit/unity/unity-theory-primer-interface.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/00-math-toolkit/unity/unity-theory-primer-interface.md:168)
-- Scope memo: [modules/17-unity-theory-perspectives/notes/scope-memo.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/17-unity-theory-perspectives/notes/scope-memo.md:61)
-- Optimization companion: [modules/01-optimization/unity/optimization-companion.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/01-optimization/unity/optimization-companion.md:133)
+- Primer interface: [unity-theory-primer-interface.md](../../00-math-toolkit/unity/unity-theory-primer-interface.md)
+- Primer discussion of invariance: [unity-theory-primer-interface.md](../../00-math-toolkit/unity/unity-theory-primer-interface.md)
+- Scope memo: [scope-memo.md](./scope-memo.md)
+- Optimization companion: [optimization-companion.md](../../01-optimization/unity/optimization-companion.md)
 
 ## Informational Action
 
@@ -276,9 +276,9 @@ If the underlying information source, action space, or constraint set cannot be 
 
 ### Companion-note cross-references
 
-- Module 17 overview: [modules/17-unity-theory-perspectives/README.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/17-unity-theory-perspectives/README.md:13)
-- Optimization companion correspondence table: [modules/01-optimization/unity/optimization-companion.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/01-optimization/unity/optimization-companion.md:63)
-- Optimization companion discussion: [modules/01-optimization/unity/optimization-companion.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/0b4f-10-2-write-unity/ML_Curriculum/modules/01-optimization/unity/optimization-companion.md:163)
+- Module 17 overview: [README.md](../README.md)
+- Optimization companion correspondence table: [optimization-companion.md](../../01-optimization/unity/optimization-companion.md)
+- Optimization companion discussion: [optimization-companion.md](../../01-optimization/unity/optimization-companion.md)
 
 ## Usage constraints across companion notes
 

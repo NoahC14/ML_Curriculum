@@ -16,13 +16,16 @@ tags:
 
 ## Purpose
 
-This guide defines the notation and visual conventions for reusable category-theory figures stored in `shared/figures/category-theory/`. Its role is narrow: keep categorical figures consistent across the Module 00 primer, Module 16 consolidation notes, and related ML structural notes.
+This guide defines the notation and visual conventions for reusable figures stored in `shared/figures/`.
+Its first responsibility is to keep the category-theory library consistent across the Module 00 primer, Module 16 consolidation notes, and related ML structural notes.
+Its second responsibility is to provide one shared palette, font policy, and line-weight system for non-categorical figures such as optimization visuals.
 
 ## Source of Truth
 
 - Diagram specs live in `shared/figures/category-theory/sources/diagrams.json`.
 - Rendered assets live in `shared/figures/category-theory/rendered/`.
 - The renderer is `tooling/scripts/render_category_theory_diagrams.py`.
+- Standalone figures outside the category-theory renderer should still follow the style tokens listed below.
 
 Contributors should edit the JSON source first, then re-render all assets.
 
@@ -39,7 +42,8 @@ Contributors should edit the JSON source first, then re-render all assets.
 
 - Use `$X$`, `$Y$`, `$Z$`, and `$H$` for input, output, latent, and representation spaces unless a note already fixes more specific notation.
 - Use `$A$`, `$B$`, and `$C$` for generic category-theory examples.
-- Use `$D$` for a finite dataset index object, not for the raw dataset as an unordered prose concept.
+- Use `$I$` for a finite dataset index object, not for the raw dataset as an unordered prose concept.
+- Use `$\mathcal{D}$` for the dataset as a sample or collection.
 - Use `$\Theta$` for parameter space.
 
 ### Core morphisms
@@ -84,16 +88,19 @@ Required habits:
 
 ## Visual Conventions
 
+- Canvas background: white or warm neutral only.
 - Node fill: warm neutral background to distinguish objects from page background.
 - Main edge and text color: dark blue for ordinary maps and labels.
 - Accent color: muted rust for the primary composite, residual path, or emphasized universal map.
 - Guide text: gray-blue for captions and secondary connectors.
-- Stroke weight: consistent across all figures in the rendered library.
+- Font family: use the repo's default sans-serif rendering for exported figures; avoid serif-only styling in shared assets.
+- Stroke weight: consistent across all figures in the rendered library, with `1.8` as the default shared line width for reusable diagrams and simple geometry figures.
 
 Avoid:
 
 - adding multiple accent colors in a single diagram;
 - switching between `$H$` and `$Z$` for the same role inside one figure;
+- using `$D$` for datasets in one figure and degree matrices in another without local disambiguation;
 - mixing generic category notation and application-specific notation without a reason stated in the nearby prose.
 
 ## When to Use Which Figure

@@ -262,7 +262,7 @@ From the message-passing point of view, GCN uses:
 - a simple nonlinear update.
 
 From the spectral point of view, it approximates a low-order graph convolution.
-That derivation appears in [spectral-graph-methods.md](/C:/Users/noaha/Documents/Projects/Finance/.vibe-kanban-workspaces/31f6-8-2-write-graph/ML_Curriculum/modules/13-graph-learning/notes/spectral-graph-methods.md).
+That derivation appears in [spectral-graph-methods.md](./spectral-graph-methods.md).
 
 ### 5.1 Why normalization matters
 
