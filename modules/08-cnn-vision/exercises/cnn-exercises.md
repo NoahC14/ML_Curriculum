@@ -28,6 +28,12 @@ They mix direct calculation, interpretation, and design reasoning.
 
 ## Exercise 1: 1D convolution as a matrix
 
+**Taxonomy**
+
+- `difficulty`: `intermediate`
+- `type`: `derivation`
+- `tags`: `convolution`, `toeplitz`, `linear-operator`
+
 Let $x \in \mathbb{R}^6$ and let the 1D kernel be
 
 $$

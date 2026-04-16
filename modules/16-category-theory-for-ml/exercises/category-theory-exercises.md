@@ -25,6 +25,12 @@ These exercises emphasize structural reasoning. Most problems ask you to specify
 
 ## Exercise 1: Supervised pipeline as composition
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `analysis`
+- `tags`: `composition`, `pipeline`, `morphisms`
+
 Let a classifier factor as
 $$
 X \xrightarrow{\phi} H \xrightarrow{h} Y.

@@ -26,6 +26,12 @@ These exercises are organized into three tiers:
 
 ## Exercise 1: Span and linear dependence
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `proof`
+- `tags`: `span`, `linear-dependence`, `vector-space`
+
 > **Problem.** Let
 > $$
 > \mathbf{v}_1 =

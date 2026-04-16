@@ -29,6 +29,12 @@ These exercises move from core convexity definitions to constrained optimality a
 
 ## Exercise 1: Convex combinations and feasible sets
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `proof`
+- `tags`: `convexity`, `feasible-set`, `definition-check`
+
 > **Problem.** Let
 > $$
 > \mathcal{C} = \{\mathbf{x} \in \mathbb{R}^2 : x_1 \geq 0,\ x_2 \geq 0,\ x_1 + x_2 \leq 1\}.

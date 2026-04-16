@@ -26,6 +26,12 @@ These exercises reinforce the distinction between observation and intervention, 
 
 ## Exercise 1. Observation versus intervention
 
+**Taxonomy**
+
+- `difficulty`: `foundational`
+- `type`: `analysis`
+- `tags`: `intervention`, `observational-data`, `causal-query`
+
 Suppose $Z$ is a confounder for treatment $X$ and outcome $Y$, with graph
 
 $$

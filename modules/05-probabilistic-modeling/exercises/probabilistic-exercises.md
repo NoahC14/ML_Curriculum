@@ -27,6 +27,12 @@ These exercises reinforce the core ideas of probabilistic modeling: Bayesian upd
 
 ## Exercise 1. Likelihood, MAP, and posterior prediction
 
+**Taxonomy**
+
+- `difficulty`: `intermediate`
+- `type`: `derivation`
+- `tags`: `likelihood`, `map-estimation`, `posterior-predictive`
+
 Suppose $Y_1,\dots,Y_n$ are iid Bernoulli with unknown parameter $\theta$.
 
 1. Write the likelihood $p(y_{1:n}\mid\theta)$.
