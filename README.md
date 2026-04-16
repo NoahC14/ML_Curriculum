@@ -8,8 +8,20 @@ Repository-based machine learning and AI curriculum with:
 - disciplined category theory integration; and
 - clearly bounded Unity Theory companion material.
 
-## Current status
-The repository scaffold is in place so syllabus, module, tooling, project, and kanban work can land in stable locations from the start.
+## Start here
+If you are new to the repository, use this flow:
+1. Read `syllabus/onboarding.md`.
+2. Complete the prerequisite self-assessment.
+3. Bootstrap the Python environment from `tooling/environment/README.md`.
+4. Open `modules/00-math-toolkit/notebooks/linear-algebra-warmup.ipynb` as your first notebook.
+5. Choose a study path from `syllabus/pacing-guide.md`.
+
+This should get a mathematically prepared learner from clone to a working first notebook in under `30` minutes on a standard laptop.
+
+## Learner onboarding
+- `syllabus/onboarding.md` for the full setup walkthrough, repo navigation guide, FAQ, and path-specific first steps
+- `syllabus/course-overview.md` for audience, scope, and rigor expectations
+- `syllabus/pacing-guide.md` for single-semester, two-semester, and self-study routes
 
 ## Source of truth
 - `kanban/ml_ai_course_kanban_v2.md` for course scope, module order, and backlog
@@ -23,6 +35,14 @@ The repository scaffold is in place so syllabus, module, tooling, project, and k
 - `tooling/` environment setup, scripts, linting, and CI
 - `projects/` beginner through research project tracks
 - `kanban/` backlog, epics, and work-card views derived from the course plan
+
+## First-study path
+For most learners, the recommended first session is:
+1. Clone the repo and create a virtual environment with `tooling/scripts/bootstrap.ps1` or `tooling/scripts/bootstrap.sh`.
+2. Activate the environment and confirm the baseline with `python tooling/scripts/run_notebook_smoke_test.py`.
+3. Start in `modules/00-math-toolkit/README.md`.
+4. Open `modules/00-math-toolkit/notebooks/linear-algebra-warmup.ipynb`.
+5. Use `syllabus/pacing-guide.md` to decide whether you are following the single-semester, two-semester, or self-study sequence.
 
 ## Naming conventions
 Repository naming is locked in `shared/style-guides/naming-conventions.md`. Use that document before adding new modules, notes, notebooks, labs, or project artifacts.
