@@ -63,6 +63,7 @@ Deliver a credible one-semester ML course for mathematically prepared learners. 
 - `16-17` only as companion reading or discussion sections
 
 ### Week-by-week schedule
+
 | Week | Modules | Focus | Estimated learner time |
 | --- | --- | --- | --- |
 | 1 | `00` | linear algebra, calculus, probability refresh; notation contract | `10-12` hours |
@@ -93,6 +94,7 @@ Deliver a credible one-semester ML course for mathematically prepared learners. 
 Cover the full 18-module architecture with enough room for derivations, labs, projects, and the companion layers in their intended late-course position.
 
 ### Semester 1: Foundations and classical ML
+
 | Week | Modules | Focus | Estimated learner time |
 | --- | --- | --- | --- |
 | 1 | `00` | linear algebra for ML | `8-10` hours |
@@ -112,6 +114,7 @@ Cover the full 18-module architecture with enough room for derivations, labs, pr
 | 15 | buffer | catch-up, project polish, assessment feedback | `4-6` hours |
 
 ### Semester 2: Deep learning, advanced AI, and companion layers
+
 | Week | Modules | Focus | Estimated learner time |
 | --- | --- | --- | --- |
 | 1 | `06` | perceptrons, MLPs, backpropagation | `8-10` hours |
@@ -152,6 +155,7 @@ Provide a realistic solo-learning schedule with built-in review points, explicit
   - `1` hour recap and written summary
 
 ### Weekly schedule
+
 | Week | Modules | Focus | Estimated time |
 | --- | --- | --- | --- |
 | 1 | `00` | linear algebra refresh | `8-10` hours |
@@ -203,6 +207,7 @@ At the end of Weeks `6`, `12`, `21`, `27`, and `33`, pause and verify:
 If a checkpoint fails, repeat the previous week before advancing. Self-study is least forgiving when optimization, statistical learning, or backpropagation are only partially internalized.
 
 ## Companion-layer policy by path
+
 | Module | Single semester | Two semesters | Self-study |
 | --- | --- | --- | --- |
 | `00` category primer | Optional subsections | Required | Required |
