@@ -333,13 +333,13 @@ Let:
 Fixing the dataset $D$, one training step can be viewed as a map
 
 $$
-s_D : \Theta \to \Theta.
+s_{\mathcal{D}} : \Theta \to \Theta.
 $$
 
 Multiple training epochs are then compositions
 
 $$
-s_D \circ s_D \circ \cdots \circ s_D.
+s_{\mathcal{D}} \circ s_{\mathcal{D}} \circ \cdots \circ s_{\mathcal{D}}.
 $$
 
 The categorical point is not that optimization becomes trivial. It is that an iterative procedure is a compositional process on a parameter space.

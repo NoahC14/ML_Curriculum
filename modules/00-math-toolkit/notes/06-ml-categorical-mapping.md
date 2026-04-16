@@ -69,7 +69,7 @@ If one of these questions has no clean answer, categorical language may still be
 | --- | --- | --- | --- | --- | --- |
 | Input space $X$ | Set or structured space of examples | Object of `Set`, or of a richer category if structure matters | Exact | A category is fixed and $X$ is an object in it | The object says nothing yet about probability, geometry, or semantics |
 | Label space $Y$ | Target space for prediction | Object of `Set`; sometimes object of `Vect_\mathbb{R}` for regression | Exact | Same as above | Classification labels usually live naturally as sets, not vector spaces |
-| Dataset $\mathcal{D}$ | Finite sample of pairs $(x_i,y_i)$ | Usually a finite object together with maps into $X$ and $Y$, or a relation $D \to X \times Y$ | Conditional structural reading | We model the dataset as a finite indexed set $D$ with maps $x : D \to X$, $y : D \to Y$ | A raw dataset is not automatically a single canonical object; sampling noise and empirical measure are extra structure |
+| Dataset $\mathcal{D}$ | Finite sample of pairs $(x_i,y_i)$ | Usually a finite object together with maps into $X$ and $Y$, or a relation $I \to X \times Y$ | Conditional structural reading | We model the dataset as a finite indexed set $I$ with maps $x : I \to X$, $y : I \to Y$ | A raw dataset is not automatically a single canonical object; sampling noise and empirical measure are extra structure |
 | Hypothesis $h$ | Predictor $h : X \to Y$ | Morphism $h : X \to Y$ in `Set`; linear hypothesis is a morphism in `Vect_\mathbb{R}` | Exact | The hypothesis belongs to the chosen morphism class | Most interesting model classes restrict admissible morphisms beyond arbitrary functions |
 | Hypothesis class $\mathcal{H}$ | Family of allowed predictors | Hom-set subset, object of a function-space category, or parameterized family $\Theta \to Y^X$ | Conditional structural reading | We specify whether $\mathcal{H}$ is a subset of $\mathrm{Hom}(X,Y)$ or is represented by parameters | Function-space objects may not exist in the ambient category; parameterization can hide non-identifiability |
 | Feature map $\phi$ | Map from raw input to representation | Morphism $\phi : X \to Z$ | Exact | Treated as an ordinary function or structure-preserving map | Whether it preserves relevant invariants is an additional claim, not part of being a morphism alone |
@@ -80,7 +80,7 @@ If one of these questions has no clean answer, categorical language may still be
 | Loss $\ell$ | Penalty comparing prediction and target | Morphism $Y \times Y \to \mathbb{R}_{\ge 0}$ in `Set` | Exact at function level | Products and codomain are fixed | The scalar codomain hides statistical meaning and optimization geometry |
 | Empirical risk $\widehat{R}$ | Average loss over sample | Composite built from dataset indexing, prediction, target, loss, and averaging maps | Conditional structural reading | We represent the dataset explicitly as a finite index object | Averaging usually needs algebraic structure such as addition and scalar division, not plain category theory alone |
 | Parameterization $\theta \mapsto f_\theta$ | Family of models indexed by parameters | Map $\Theta \to \mathrm{Hom}(X,Y)$ when such a hom-object exists, or external parameter assignment | Conditional structural reading | We work in a category with suitable function-space structure, or keep the hom-set external | Many categories used in beginner ML notes are not automatically Cartesian closed |
-| Optimizer step $s_D$ | One parameter update on dataset $D$ | Endomorphism $s_D : \Theta \to \Theta$ | Exact at the level of iterative update | A concrete update rule is fixed | The construction of $s_D$ uses calculus, linear algebra, and stochastic approximations outside elementary category theory |
+| Optimizer step $s_{\mathcal{D}}$ | One parameter update on dataset $\mathcal{D}$ | Endomorphism $s_{\mathcal{D}} : \Theta \to \Theta$ | Exact at the level of iterative update | A concrete update rule is fixed | The construction of $s_{\mathcal{D}}$ uses calculus, linear algebra, and stochastic approximations outside elementary category theory |
 | Training loop | Repeated application of optimizer steps | Composition of endomorphisms on $\Theta$ | Exact structural statement | Each step is a map with matching domain/codomain | Convergence and stability are not categorical consequences |
 | Evaluation metric | Map from predictions and targets to a scalar summary | Morphism from an object of prediction-target pairs to a score object | Conditional structural reading | The evaluation protocol is encoded as functions on a finite sample or distribution | Statistical uncertainty, confidence intervals, and hypothesis testing require more than compositional language |
 | Natural transformation between model families | Coherent comparison between two constructions across many spaces | Family of maps between functors, if each architecture assignment is actually functorial | Usually analogy unless formalized carefully | We must define source and target categories, both functors, and naturality squares | In ordinary ML practice, "architecture A versus B" is usually not specified functorially |
@@ -193,7 +193,7 @@ One clean translation uses affine maps in `Set`, since the bias term prevents st
 The empirical risk can be decomposed as
 
 $$
-D \xrightarrow{(x,y)} X \times Y
+I \xrightarrow{(x,y)} X \times Y
 \xrightarrow{h \times \mathrm{id}_Y} Y \times Y
 \xrightarrow{\ell_{\mathrm{sq}}} \mathbb{R}_{\ge 0}
 \xrightarrow{\mathrm{avg}} \mathbb{R}_{\ge 0},
@@ -201,14 +201,14 @@ $$
 
 where:
 
-- $D = \{1,\ldots,n\}$ is the finite index set of examples;
+- $I = \{1,\ldots,n\}$ is the finite index set of examples;
 - $x(i) = \mathbf{x}_i$ and $y(i) = y_i$;
 - $\ell_{\mathrm{sq}}(\hat{y},y) = (\hat{y}-y)^2$.
 
 ### What is exact here?
 
 - Predictors as morphisms: exact.
-- The pipeline defining empirical risk from dataset indices: exact once $D$ and the averaging map are specified.
+- The pipeline defining empirical risk from dataset indices: exact once $I$ and the averaging map are specified.
 - Linear regression as a morphism in `Vect_\mathbb{R}`: exact only after using augmented coordinates or restricting to zero bias.
 
 ### What is not captured?

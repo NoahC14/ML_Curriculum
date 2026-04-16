@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="640" height="320" viewBox="0 0 640 320">
-  <rect width="640" height="320" fill="#fbfaf5"/>
+  <rect width="640" height="320" fill="#ffffff"/>
   <path d="M150,70 C105,120 105,220 180,255 C250,285 360,275 425,230 C500,180 520,95 450,60 C355,18 210,25 150,70 Z"
-        fill="#d7eadb" stroke="#355e3b" stroke-width="3"/>
-  <line x1="220" y1="120" x2="390" y2="200" stroke="#c45508" stroke-width="4"/>
-  <circle cx="220" cy="120" r="7" fill="#1f3c88"/>
-  <circle cx="390" cy="200" r="7" fill="#1f3c88"/>
-  <circle cx="305" cy="160" r="7" fill="#c45508"/>
-  <text x="206" y="108" font-family="Georgia, serif" font-size="22" fill="#1f3c88">x</text>
-  <text x="398" y="194" font-family="Georgia, serif" font-size="22" fill="#1f3c88">y</text>
-  <text x="314" y="152" font-family="Georgia, serif" font-size="22" fill="#c45508">tx + (1 - t)y</text>
-  <text x="72" y="294" font-family="Georgia, serif" font-size="22" fill="#2c2c2c">
+        fill="#f6f3ea" stroke="#1f3a5f" stroke-width="1.8"/>
+  <line x1="220" y1="120" x2="390" y2="200" stroke="#b35c44" stroke-width="1.8"/>
+  <circle cx="220" cy="120" r="6" fill="#1f3a5f"/>
+  <circle cx="390" cy="200" r="6" fill="#1f3a5f"/>
+  <circle cx="305" cy="160" r="6" fill="#b35c44"/>
+  <text x="206" y="108" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" fill="#1f3a5f">x</text>
+  <text x="398" y="194" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" fill="#1f3a5f">y</text>
+  <text x="314" y="152" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" fill="#b35c44">tx + (1 - t)y</text>
+  <text x="72" y="294" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" fill="#7a8796">
     A set is convex when every line segment joining two feasible points stays inside the set.
   </text>
 </svg>

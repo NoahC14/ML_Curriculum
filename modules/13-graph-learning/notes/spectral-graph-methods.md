@@ -24,6 +24,7 @@ The key idea is that the graph Laplacian plays the role that the ordinary Fourie
 it gives an orthogonal basis of graph modes, ordered from smooth to oscillatory.
 
 This viewpoint lets us define graph convolution and then derive the GCN layer as a tractable approximation.
+For the message-passing-first presentation that this note complements, see [graph-learning.md](./graph-learning.md).
 
 ## Learning objectives
 
